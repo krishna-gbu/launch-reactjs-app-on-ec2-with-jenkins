@@ -26,3 +26,15 @@ install yarn
 npm install --global yarn
 ```
 
+![image](https://user-images.githubusercontent.com/40553867/201738302-b2a49140-a87b-4ca0-84c7-9c2e1717f4c8.png)
+
+## install ngix
+
+![image](https://user-images.githubusercontent.com/40553867/201739646-b503d439-f1e7-4fd3-8897-73dec08f5542.png)
+
+![image](https://user-images.githubusercontent.com/40553867/201740854-e59ffbc9-ae8f-4a69-89ac-15ecf624d8d1.png)
+## nginx index.html file location
+![image](https://user-images.githubusercontent.com/40553867/201740993-8e4bd277-f76d-4cbd-a6c7-77453bd82174.png)
+
+# now jenkins in picture
+

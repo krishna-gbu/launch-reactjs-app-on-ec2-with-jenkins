@@ -38,3 +38,41 @@ npm install --global yarn
 
 # now jenkins in picture
 
+![image](https://user-images.githubusercontent.com/40553867/201829842-7daeb359-b25e-4361-b49c-c097ed129b36.png)
+
+![image](https://user-images.githubusercontent.com/40553867/201829441-30098a81-fe3c-4a17-9368-695bd7211d89.png)
+
+![image](https://user-images.githubusercontent.com/40553867/201829505-1ffa166e-bdba-4480-8ee4-ad4d2188a6e1.png)
+
+## this is only testing purpose
+
+![image](https://user-images.githubusercontent.com/40553867/201830391-01b015a1-89bc-49e0-97ac-56a5ec5f21a6.png)
+
+## pipeline
+```
+pipeline {
+    agent {label "ubuntu_slave"}
+
+    stages {
+        stage('git scm') {
+            steps {
+               git branch: 'main', url: 'https://github.com/krishna-gbu/launch-reactjs-app-on-ec2-with-jenkins.git'
+            }
+        }
+         stage('deploy scm') {
+            steps {
+                sh 'yarn'
+                sh 'yarn run build'
+                sh 'sudo cp -r build/* /usr/share/nginx/html/'
+                sh 'sudo systemctl restart nginx'
+            }
+        }
+    }
+}
+
+```
+![image](https://user-images.githubusercontent.com/40553867/201832196-d06a9c40-22ef-43d2-adea-59b567b5bf8b.png)
+
+## port 80 allow from inbound firewall aws
+![image](https://user-images.githubusercontent.com/40553867/201832532-afa45a0f-70ac-44e2-a955-b83e065e63ad.png)
+

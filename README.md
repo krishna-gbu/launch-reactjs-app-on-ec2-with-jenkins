@@ -63,7 +63,7 @@ pipeline {
             steps {
                 sh 'yarn'
                 sh 'yarn run build'
-                sh 'sudo cp -r build/* /usr/share/nginx/html/'
+                sh 'sudo cp -r build/* /var/www/html/'
                 sh 'sudo systemctl restart nginx'
             }
         }
@@ -71,8 +71,9 @@ pipeline {
 }
 
 ```
-![image](https://user-images.githubusercontent.com/40553867/201832196-d06a9c40-22ef-43d2-adea-59b567b5bf8b.png)
+![image](https://user-images.githubusercontent.com/40553867/201848146-8f704a67-1ba8-4b49-9df1-331f0b44b912.png)
 
 ## port 80 allow from inbound firewall aws
 ![image](https://user-images.githubusercontent.com/40553867/201832532-afa45a0f-70ac-44e2-a955-b83e065e63ad.png)
+![image](https://user-images.githubusercontent.com/40553867/201848233-fa1877fa-98c9-4600-a38a-fb3bf37cbc9e.png)
 
